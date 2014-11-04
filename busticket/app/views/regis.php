@@ -26,26 +26,25 @@
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   </button>
-  <a class="navbar-brand" rel="home" href="/laravel/public/home"><span class="glyphicon glyphicon-home"></span></a>
+  <a class="navbar-brand" rel="home" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
 
-  </div>
+</div>
+
+<div class="collapse navbar-collapse">
   
-  <div class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="howto.html">วิธีจอง</a></li>
+    <li><a href="bkk-cm.html">ค้นหาเที่ยวรถ</a></li>
+    <li><a href="#">จองตั๋วรถ</a></li>
+    <li><a href="check.html">ตรวจสอบการจอง</a></li>
     
-    <ul class="nav navbar-nav">
-      <li><a href="/laravel/public/howto">วิธีจอง</a></li>
-      <li><a href="/laravel/public/bkk-cm">ค้นหาเที่ยวรถ</a></li>
-      <li><a href="#">จองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
-      
-    </ul>
-    
-    <div class="col-sm-3 col-md-3 pull-right">
-       <a href="/laravel/public/login"><button type="submit" class="btn btn-default">login</button></a>
-       <a href="/laravel/public/register"><button type="submit" class="btn btn-default">register</button></a>
-    
-    </div>
-    
+  </ul>
+  
+  <div class="col-sm-3 col-md-3 pull-right">
+     <a href="login.html"><button type="submit" class="btn btn-default">login</button></a>
+     <a href="regis.html"><button type="submit" class="btn btn-default">register</button></a>
+  
+  </div>
   
 </div>
 </div>
@@ -70,7 +69,7 @@
   
   <div class="col-md-8 col-md-offset-4">
     
-      <form name="form1" method="post" action="/laravel/public/willRegister">
+      <form name="form1" method="post" action="">
 
 Register Form <br>
 
@@ -80,18 +79,11 @@ Register Form <br>
 
 <tr>
 
-<td>&nbsp;Name</td>
-
-<td><input name="name" type="text" id="txtName" size="35"></td>
-
-</tr>
-<tr>
-
 <td width="125"> &nbsp;Username</td>
 
 <td width="180">
 
-<input name="username" type="text" id="txtUsername" size="20">
+<input name="txtUsername" type="text" id="txtUsername" size="20">
 
 </td>
 
@@ -101,13 +93,11 @@ Register Form <br>
 
 <td> &nbsp;Password</td>
 
-<td><input name="password" type="password" id="txtPassword">
+<td><input name="txtPassword" type="password" id="txtPassword">
 
 </td>
 
 </tr>
-
-
 
 <tr>
 
@@ -118,6 +108,25 @@ Register Form <br>
 </td>
 
 </tr>
+
+<tr>
+
+<td> &nbsp;Confirm Password</td>
+
+<td><input name="txtConPassword" type="password" id="txtConPassword">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>&nbsp;Name</td>
+
+<td><input name="txtName" type="text" id="txtName" size="35"></td>
+
+</tr>
+
 
 
 </tbody>

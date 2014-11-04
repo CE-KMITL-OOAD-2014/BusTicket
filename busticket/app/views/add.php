@@ -18,19 +18,19 @@ include("config.php");
 	
 	$sql_source="SELECT * FROM ``WHERE `` LIKE ''"; //ดึงข้อมูลมาทั้งหมด
 	$result_source=mysql_query($sql_source);
-	$num_source=mysql_num_rows($result_source);
+	//$num_source=mysql_num_rows($result_source);
 
 	$sql_des="SELECT * FROM ``WHERE `` LIKE ''"; //ดึงข้อมูลมาทั้งหมด
 	$result_des=mysql_query($sql_des);
-	$num_dest=mysql_num_rows($result_des);
+	//$num_dest=mysql_num_rows($result_des);
 
-	if($num_dest>=1){ //เช็คว่าข้อมูลที่มีการค้นหามีหรือไม่
-		echo"เส้นทางนี้มีการเพิ่มแล้ว<br>";
+	if($_POST['source']==""){ //เช็คว่าข้อมูลที่มีการค้นหามีหรือไม่
+		echo"กรุณาใส่ต้นทาง<br>";
 		
 
-	}else if($_POST['dest']==""){
+	}else if($_POST['des']==""){
 
-		echo"dรุณาใส่ปลายทาง";
+		echo"กรุณาใส่ปลายทาง";
 		exit();
 	}else if( $_POST['timego']==""){
 
@@ -58,8 +58,9 @@ include("config.php");
 	
 
 	?>
+		<a href="addtrip.php">เพิ่มข้อมูล</a>
+
 	<br></br>
-	
 
 
 

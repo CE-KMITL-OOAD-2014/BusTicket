@@ -36,8 +36,8 @@ session_start();
 	else{
         $_SESSION["user"]=$usernameinput;
 		echo"สวัสดี {$usernameinput} !<br>";
-
-	}
+//<a href="edit.php">แก้ไขข้อมูลส่วนตัว</a>
+	}	
 	}	
 	
 
@@ -45,7 +45,7 @@ session_start();
 
 	
 	?>
-	<a href="edit.php">แก้ไขข้อมูลส่วนตัว</a>
+
 	<br></br>
 <a href="login.php">กลับไปที่หน้า login</a>
 	<br></br>

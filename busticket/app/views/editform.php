@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register</title>
+  <title>แก้ไขข้อมูลส่วนตัว</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,11 +40,7 @@
       
     </ul>
     
-    <div class="col-sm-3 col-md-3 pull-right">
-       <a href="/laravel/public/login"><button type="submit" class="btn btn-default">login</button></a>
-       <a href="/laravel/public/register"><button type="submit" class="btn btn-default">register</button></a>
-    
-    </div>
+   
     
   
 </div>
@@ -70,32 +66,15 @@
   
   <div class="col-md-8 col-md-offset-4">
     
-      <form name="form1" method="post" action="/laravel/public/willRegister">
+      <form name="form1" method="post" action="/laravel/public/willedit">
 
-Register Form <br>
+Edit Form <br>
 
 <table width="400" border="1" style="width: 400px">
 
 <tbody>
 
-<tr>
 
-<td>&nbsp;Name</td>
-
-<td><input name="name" type="text" id="txtName" size="35"></td>
-
-</tr>
-<tr>
-
-<td width="125"> &nbsp;Username</td>
-
-<td width="180">
-
-<input name="username" type="text" id="txtUsername" size="20">
-
-</td>
-
-</tr>
 
 <tr>
 
@@ -129,7 +108,7 @@ Register Form <br>
 </div>
 <div class="row">
    <div class="col-md-8 col-md-offset-5">
- <a href="login.html"><button type="submit" class="btn btn-default">สมัครสมาชิก</button></a>
+ <a href="#"><button type="submit" class="btn btn-default">แก้ไขข้อมูล</button></a>
  </div>
   <div class="row">
 <div class="col-md-4 "></div>
