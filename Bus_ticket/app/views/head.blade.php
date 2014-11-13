@@ -27,31 +27,32 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="/laravel/public/addadmin"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
   <div class="collapse navbar-collapse">
     
     <ul class="nav navbar-nav">
-      <li><a href="/laravel/public/howto">วิธีจอง</a></li>
-    <!-- <li><a href="/laravel/public/bkk-cm">ค้นหาเที่ยวรถ</a></li>-->
-      <li><a href="#">จองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
-      <li><a href="/laravel/public/register">สมัครสมาชิก</a></li>
-      <li><a href="/laravel/public/editform">แก้ไขข้อมูลสมาชิก</a></li>
+
+    <li><a href="/laravel/public/showPathAdmin">แสดงเส้นทางการจอง</a></li>
+      <li><a href="#">ปรับปรุงสถานะการจอง</a></li>
+      <li><a href="/laravel/public/checkAdmin">ตรวจสอบการจอง</a></li>
+       <li><a href="/laravel/public/addPath">เพิ่มเส้นทางการเดินทาง</a></li>
+    
     </ul>
     
     
 		
      <div class="col-sm-3 col-md-3 pull-right">
-       <a href="/laravel/public/login"><button type="submit" class="btn btn-default">Log In</button></a>
+       <?php //<a href="/laravel/public/login"><button type="submit" class="btn btn-default">Log In</button></a> ?>
        <a href="/laravel/public/"><button type="submit" class="btn btn-default">log out</button></a>
     
     </div>
 	</div>
 
-  @yield('content')
+  
 </div>
+@yield('content')
 </body>
 </html>

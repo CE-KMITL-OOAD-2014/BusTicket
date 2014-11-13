@@ -1,8 +1,7 @@
 
 <html>
-@extends('header')
-
-@stop
+@extends('headl')
+@section('content')
   
   <body>
     
@@ -43,3 +42,4 @@
   
   </body>
 </html>
+@stop

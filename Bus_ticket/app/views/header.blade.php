@@ -34,24 +34,30 @@
   <div class="collapse navbar-collapse">
     
     <ul class="nav navbar-nav">
+
       <li><a href="/laravel/public/howto">วิธีจอง</a></li>
-    <!-- <li><a href="/laravel/public/bkk-cm">ค้นหาเที่ยวรถ</a></li>-->
-      <li><a href="#">จองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
+      <li><a href="/laravel/public/showPath">แสดงเส้นทางการจอง</a></li>
+       <li><a href="/laravel/public/search">ค้นหาเที่ยวรถ</a></li> 
+     <?php
+      //<li><a href="#">จองตั๋วรถ</a></li>
+      //<li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
+
+       ?>
       <li><a href="/laravel/public/register">สมัครสมาชิก</a></li>
      
     </ul>
     
     
 		
-     <div class="col-sm-3 col-md-3 pull-right">
+     <div class="col-sm-3 col-md-1 pull-right">
        <a href="/laravel/public/login"><button type="submit" class="btn btn-default">Log In</button></a>
       
     
     </div>
 	</div>
 
-  @yield('content')
+  
 </div>
+@yield('content')
 </body>
 </html>

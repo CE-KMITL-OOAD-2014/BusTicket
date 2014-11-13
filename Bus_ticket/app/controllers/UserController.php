@@ -14,7 +14,7 @@
 		
 		 if (Auth::attempt($usertry)){ 
 		 	 $check = Auth::User()->username;	
-		 	 if($check=='admin') return View::make('addTrip');
+		 	 if($check=='admin') return View::make('addadmin');
 		 	 else return View::make('home');
 		 } //$user=Auth::validate(Input::all());
 		 else return View::make('login');
@@ -24,7 +24,7 @@
 		$validator= Validator::make(Input::all(),
 				array(
 					"username"=>"unique:users|required",
-					"password"=>"required",
+						"password"=>"required",
 					//"phonenum"=>"unique:users",
 			));
 
@@ -46,7 +46,7 @@
 			$newUser->name = $name;
 			$newUser->tel = $telephone;
 			$newUser->save();
-			
+
 			return Redirect::to('fin');
 		}
 	
@@ -76,7 +76,6 @@
 		//$pass = Input::get('password');
 		$telephone = Input::get('phonenum');
 
-
 		$id = Auth::User()->id;
 
 		//Auth::User()->tel=$telephone;
@@ -90,7 +89,7 @@
 			'tel'=>$telephone,
 			));
 
-		return Redirect::to('home');
+		return Redirect::to('editformMember');
 
 	}
 
@@ -110,7 +109,7 @@
 			'password'=>$pass
 			));
 
-		return Redirect::to('home');
+		return Redirect::to('editformMember');
 
 	}
 

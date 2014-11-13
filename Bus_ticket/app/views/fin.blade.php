@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-@extends('head')
+@extends('header')
 
 @stop
   <body>

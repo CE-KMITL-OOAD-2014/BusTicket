@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-
+   
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,6 +14,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body>
     
@@ -27,31 +27,33 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="/laravel/public/home"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
   <div class="collapse navbar-collapse">
     
-    <ul class="nav navbar-nav">
-      <li><a href="/laravel/public/howto">วิธีจอง</a></li>
-    <!-- <li><a href="/laravel/public/bkk-cm">ค้นหาเที่ยวรถ</a></li>-->
-      <li><a href="#">จองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
-      <li><a href="/laravel/public/register">สมัครสมาชิก</a></li>
-      <li><a href="/laravel/public/editform">แก้ไขข้อมูลสมาชิก</a></li>
+   <ul class="nav navbar-nav">
+   <li><a href="/laravel/public/howtoMember">วิธีจอง</a></li>
+   <li><a href="/laravel/public/showPathMember">แสดงเส้นทางการจอง</a></li>
+   <li><a href="/laravel/public/searchMember">จองตั๋วรถ</a></li>
+
+     
+      <li><a href="#">ยกเลิกการจองตั๋วรถ</a></li>
+      <li><a href="/laravel/public/checkMember">ตรวจสอบการจอง</a></li>
+      <li><a href="/laravel/public/editformMember">แก้ไขข้อมูลสมาชิก</a></li>
     </ul>
     
     
 		
-     <div class="col-sm-3 col-md-3 pull-right">
+     <div class="col-sm-3 col-md-1 pull-right">
        
        <a href="/laravel/public/"><button type="submit" class="btn btn-default">log out</button></a>
     
     </div>
 	</div>
 
-  @yield('content')
 </div>
+  @yield('content')
 </body>
 </html>
