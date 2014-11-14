@@ -78,32 +78,21 @@ class UserController extends BaseController{
 
 			$id = Auth::User()->id;
 
-		//Auth::User()->tel=$telephone;
+		
 
-		//$this->user = Auth::user();
-
-		//$user->password =  Hash::make($pass);
-		//$user->tel = $telephone;
-
-			User::where('id',$id)->update(array(
+			User::where('id',$id)->update(array( //edit telephone number
 				'tel'=>$telephone,
 				));
 
-			return Redirect::to('editformMember');
+			return Redirect::to('editformMember'); 
 
 		}
 
-		public function editPass(){
+		public function editPass(){ //edit password
 
 			$pass = Hash::make(Input::get('password'));
 			$id = Auth::User()->id;
 
-		//Auth::User()->tel=$telephone;
-
-		//$this->user = Auth::user();
-
-		//$user->password =  Hash::make($pass);
-		//$user->tel = $telephone;
 
 			User::where('id',$id)->update(array(
 				'password'=>$pass
