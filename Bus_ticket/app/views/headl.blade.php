@@ -27,28 +27,28 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/home"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="home"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
   <div class="collapse navbar-collapse">
     
    <ul class="nav navbar-nav">
-   <li><a href="/laravel/public/howtoMember">วิธีจอง</a></li>
-   <li><a href="/laravel/public/showPathMember">แสดงเส้นทางการจอง</a></li>
-   <li><a href="/laravel/public/searchMember">จองตั๋วรถ</a></li>
+   <li><a href="howtoMember">วิธีจอง</a></li>
+   <li><a href="showPathMember">แสดงเส้นทางการจอง</a></li>
+   <li><a href="searchMember">จองตั๋วรถ</a></li>
 
      
       <li><a href="#">ยกเลิกการจองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/checkMember">ตรวจสอบการจอง</a></li>
-      <li><a href="/laravel/public/editformMember">แก้ไขข้อมูลสมาชิก</a></li>
+      <li><a href="checkMember">ตรวจสอบการจอง</a></li>
+      <li><a href="editformMember">แก้ไขข้อมูลสมาชิก</a></li>
     </ul>
     
     
 		
      <div class="col-sm-3 col-md-1 pull-right">
      
-     <form name="form" method="post" action="/laravel/public/logout">  
+     <form name="form" method="post" action="/logout">  
        <button type="submit" class="btn btn-default">log out</button>
        </form>
     

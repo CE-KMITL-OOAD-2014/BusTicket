@@ -14,7 +14,7 @@
 		
 		 if (Auth::attempt($usertry)){ 
 		 	 $check = Auth::User()->username;	
-		 	 if($check=='admin') return View::make('homeAdmin');
+		 	 if($check=='admin') return View::make('Homeadmin');
 		 	 else return View::make('home');
 		 } //$user=Auth::validate(Input::all());
 		 else return Redirect::to('/');

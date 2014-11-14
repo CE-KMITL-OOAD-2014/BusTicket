@@ -20,7 +20,7 @@
 	  
 	  
 	    
-		 <form name="form1" method="post" action="/laravel/public/willRegister">
+		 <form name="form1" method="post" action="/willRegister">
 
 			Register Form <br>
 

@@ -36,6 +36,10 @@ Route::get('/searchMember',array('before' => 'checkAuth', function()
 
 Route::post('/searchTrip','PathController@search');
 
+Route::get('/index',function(){
+  return View::make('index');
+});
+
 Route::get('/',function(){
   return View::make('index');
 });
