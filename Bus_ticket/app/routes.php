@@ -11,56 +11,82 @@
 |
 */
 
-
-
-Route::get('/addadmin', function()
+Route::get('/', function()
 {
-  return View::make('addadmin');
+	return View::make('hello');
 });
 
-Route::get('/search', array(
-    'before' => 'checkAuth',function()
+
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the Closure to execute when that URI is requested.
+|
+*/
+
+
+
+Route::get('/homeAdmin', function()
+{
+  return View::make('HomeAdmin');
+});
+
+Route::get('/search',function()
 {
   return View::make('search');
-}));
+});
 
-Route::get('/searchMember', function()
+Route::get('/home',array('before' => 'checkAuth','after' => 'checkAuth',function(){
+     return View::make('home');
+  }));
+
+
+Route::get('/searchMember',array('before' => 'checkAuth', function()
 {
   return View::make('searchMember');
-});
+}));
 
 
 Route::post('/searchTrip','PathController@search');
 
+Route::get('/',function(){
+  return View::make('index');
+});
 
-
-Route::get('/', array(
-    'before' => 'checkAuth',
-    function()
-  {
-  return View::make('public/index');
-}));
-
-Route::get('/login', array(
-    'before' => 'checkAuth',function()
+Route::get('/login',function()
 {
   return View::make('login');
-}));
+});
 
 Route::post('/tryLogin','UserController@login');
 
 Route::post('/addPath_hide','PathController@add');
 
-Route::get('/addPath',function()
+Route::get('/addPath',array('before' => 'checkAuth',function()
 {
   return View::make('addPath_hide');
+}));
+
+Route::get('/showPath',function()
+{
+  return View::make('showPath');
 });
 
-Route::post('/showPath','PathController@show');
 
-Route::post('/showPathAdmin','PathController@show');
+Route::get('/showPathAdmin',array('before' => 'checkAuth',function()
+{
+  return View::make('showPathAdmin');
+}));
 
-Route::post('/showPathMember','PathController@show');
+
+Route::get('/showPathMember',array('before' => 'checkAuth',function()
+{
+  return View::make('showPathMember');
+}));
 
 Route::post('/logout','UserController@logout');
 
@@ -76,10 +102,10 @@ Route::post('/willRegister','UserController@register');
 Route::post('/willEditTelephone','UserController@editTel');
 Route::post('/willEditPassword','UserController@editPass');
 
-Route::get('/editformMember', function()
+Route::get('/editformMember',array('before' => 'checkAuth', function()
 {
   return View::make('editformMember');
-});
+}));
 //Route::post('/willRegister','UserController@edit');
 
 
@@ -89,8 +115,7 @@ Route::get('/a', function()
 });
 
 
-Route::get('/howtoMember', array(
-    'before' => 'checkAuth',function()
+Route::get('/howtoMember',array('before'=>'checkAuth','after'=>'checkAuth',function()
 {
   return View::make('howtoMember');
 }));
@@ -126,21 +151,17 @@ Route::get('/bkk-ud', function()
   return View::make('bkk-ud');
 });
 
-Route::get('/home', array(
-    'before' => 'checkAuth',function()
-{
-  return View::make('home');
-}));
+
 
 Route::get('/howto', function()
 {
   return View::make('howto');
 });
 
-Route::get('/checkMember', function()
+Route::get('/checkMember',array('before' => 'checkAuth', function()
 {
   return View::make('checkMember');
-});
+}));
 
 
 Route::get('/checkAdmin', function()
@@ -157,11 +178,6 @@ Route::get('/booking', array(
 }));
 
 
-
-Route::get('/', function()
-{
-  return View::make('index');
-});
 
 
 
