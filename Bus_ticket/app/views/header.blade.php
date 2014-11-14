@@ -18,7 +18,7 @@
   </head>
   <body>
     
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,12 +37,7 @@
 
       <li><a href="howto">วิธีจอง</a></li>
       <li><a href="showPath">แสดงเส้นทางการจอง</a></li>
-       <li><a href="search">ค้นหาเที่ยวรถ</a></li> 
-     <?php
-      //<li><a href="#">จองตั๋วรถ</a></li>
-      //<li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
-
-       ?>
+      <li><a href="search">ค้นหาเที่ยวรถ</a></li> 
       <li><a href="register">สมัครสมาชิก</a></li>
      
     </ul>
@@ -52,8 +47,7 @@
      <div class="col-sm-3 col-md-1 pull-right">
        <a href="login"><button type="submit" class="btn btn-default">Log In</button></a>
       
-    
-    </div>
+     </div>
 	</div>
 
   

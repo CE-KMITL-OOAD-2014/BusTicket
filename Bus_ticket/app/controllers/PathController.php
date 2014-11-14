@@ -17,7 +17,7 @@
 			$newPath->money = $moneyInput;   
 
 			$newPath->save();
-			return View::make('addadmin');
+			return View::make('addadmin'); //add path  
 
 			//return View::make('hello');
 
@@ -27,12 +27,12 @@
 			$destinationInput = Input::get('des');
 
 
-			$trips = DB::table('paths')->where('source', $sourceInput)->Where('destination',$destinationInput)->get();
+			$trips = DB::table('paths')->where('source', $sourceInput)->Where('destination',$destinationInput)->get(); //get data form table path
 
-			if(empty($trips))
+			if(empty($trips)) //empty return searchMember page
 				return View::make('searchMember');
 			else 
-				return View::make('booking')->with('trips',$trips);
+				return View::make('booking')->with('trips',$trips); //have path return bookking page
 
 	}
 
