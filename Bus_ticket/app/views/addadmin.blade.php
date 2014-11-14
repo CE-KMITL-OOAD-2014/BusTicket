@@ -26,7 +26,7 @@
 <br></br>
      <div class="row">
     
-    <div class="col-md-8 col-md-offset-3">
+    <div class="col-xs-6 col-md-offset-4">
       <img src="11.jpg" width="500" height="500">
       
       

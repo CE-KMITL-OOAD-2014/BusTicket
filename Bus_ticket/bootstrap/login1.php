@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,8 +17,10 @@
     <![endif]-->
   </head>
   <body>
+  <form name="form1" method="post" action="loigsave.php">
     <!--login modal-->
     <br></br>
+
 <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
@@ -27,26 +29,21 @@
           <h1 class="text-center">Login</h1>
       </div>
       <div class="modal-body">
-
-
-          <form action = '/laravel/public/tryLogin' class="form col-md-12 center-block" method="post">
+          <form class="form col-md-12 center-block">
             <div class="form-group">
-              <input type="text" class="form-control input-lg" name="txtUsername" placeholder="username" required="" autofocus="">
+              <input type="text" class="form-control input-lg" name="username" placeholder="username">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control input-lg" name="txtPassword" placeholder="Password" required="" autofocus="">
+              <input type="password" class="form-control input-lg" name="password" placeholder="Password">
             </div>
             <div class="form-group">
-              
-              <input class="btn btn-primary btn-lg btn-block" type ='submit' value='Log In'>
+              <button class="btn btn-primary btn-lg btn-block">Log In</button>
               <span class="pull-right"><a href="#">ลืมรหัสผ่าน</a></span>
             </div>
           </form>
-
-
       </div>
       <div class="modal-footer">
-          <div class="col-xs-6 col-md-12">
+          <div class="col-md-12">
           
       </div>  
       </div>
@@ -54,12 +51,13 @@
   </div>
 </div>
 
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
  
- 
+
     
     <div class="row">
   <div class="col-md-4 "></div>

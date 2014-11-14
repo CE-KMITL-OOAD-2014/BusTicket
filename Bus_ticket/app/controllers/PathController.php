@@ -27,12 +27,13 @@
 			$destinationInput = Input::get('des');
 
 
-			$trip = DB::table('paths')->where('source', $sourceInput)->Where('destination',$destinationInput)->get();
+			$trip = DB::table('paths')->where('source', $sourceInput)->Where('destination',$destinationInput)->get(); //fetch form database
 
 			if(empty($trip))
 				return View::make('searchMember');
 			else 
 				return View::make('booking')->with('trip',$trip);
+			//show data from database
 
 	}
 

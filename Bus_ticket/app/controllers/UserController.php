@@ -14,7 +14,7 @@
 		
 		 if (Auth::attempt($usertry)){ 
 		 	 $check = Auth::User()->username;	
-		 	 if($check=='admin') return View::make('addadmin');
+		 	 if($check=='admin') return View::make('addadmin'); //check สิทธิ์การเข้าถึง
 		 	 else return View::make('home');
 		 } //$user=Auth::validate(Input::all());
 		 else return View::make('login');
