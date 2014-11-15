@@ -78,7 +78,7 @@ class UserController extends BaseController{
 
 			$id = Auth::User()->id;
 
-		
+			
 
 			User::where('id',$id)->update(array( //edit telephone number
 				'tel'=>$telephone,

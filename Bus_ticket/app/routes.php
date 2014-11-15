@@ -24,8 +24,8 @@ Route::get('/search',function()
 });
 
 Route::get('/home',array('before' => 'checkAuth','after' => 'checkAuth',function(){
-     return View::make('home');
-  }));
+ return View::make('home');
+}));
 
 
 Route::get('/searchMember',array('before' => 'checkAuth', function()
@@ -158,11 +158,11 @@ Route::get('/checkAdmin', function()
 
 
 Route::get('/booking', array(
-    'before' => 'checkAuth',
+  'before' => 'checkAuth',
   function()
   {
-  return View::make('booking');
-}));
+    return View::make('booking');
+  }));
 
 
 
