@@ -13,9 +13,9 @@
 
 
 
-Route::get('/homeAdmin', function()
+Route::get('/Homeadmin', function()
 {
-  return View::make('homeAdmin');
+  return View::make('Homeadmin');
 });
 
 Route::get('/search',function()
@@ -24,8 +24,8 @@ Route::get('/search',function()
 });
 
 Route::get('/home',array('before' => 'checkAuth','after' => 'checkAuth',function(){
-     return View::make('home');
-  }));
+ return View::make('home');
+}));
 
 
 Route::get('/searchMember',array('before' => 'checkAuth', function()
@@ -34,21 +34,11 @@ Route::get('/searchMember',array('before' => 'checkAuth', function()
 }));
 
 
-
-Route::post('/cancelBook','ReservingController@cancel');
-//Route::get('/cancelBooking','ReservingController@show');
-
-
-
-Route::get('/cancelBooking',array('before' => 'checkAuth', function()
-{
-  return View::make('cancelBooking');
-}));
-
-
 Route::post('/searchTrip','PathController@search');
 
-Route::post('/reservation','ReservingController@reserving');
+Route::get('/index',function(){
+  return View::make('index');
+});
 
 Route::get('/',function(){
   return View::make('index');
@@ -61,26 +51,17 @@ Route::get('/login',function()
 
 Route::post('/tryLogin','UserController@login');
 
-Route::post('/addPath','PathController@add');
+Route::post('/addPath_hide','PathController@add');
 
 Route::get('/addPath',array('before' => 'checkAuth',function()
 {
-  return View::make('addPath');
+  return View::make('addPath_hide');
 }));
 
 Route::get('/showPath',function()
 {
   return View::make('showPath');
 });
-
-
-Route::get('/updateStatus',function()
-{
-  return View::make('updateStatus');
-});
-
-Route::post('/updateStatus','ReservingController@update');
-
 
 
 Route::get('/showPathAdmin',array('before' => 'checkAuth',function()
@@ -107,7 +88,6 @@ Route::post('/willRegister','UserController@register');
 
 Route::post('/willEditTelephone','UserController@editTel');
 Route::post('/willEditPassword','UserController@editPass');
-Route::post('/willEditName','UserController@editName');
 
 Route::get('/editformMember',array('before' => 'checkAuth', function()
 {
@@ -165,7 +145,11 @@ Route::get('/howto', function()
   return View::make('howto');
 });
 
-Route::get('/checkMember','ReservingController@show');
+Route::get('/checkMember',array('before' => 'checkAuth', function()
+{
+  return View::make('checkMember');
+}));
+
 
 Route::get('/checkAdmin', function()
 {
@@ -174,11 +158,11 @@ Route::get('/checkAdmin', function()
 
 
 Route::get('/booking', array(
-    'before' => 'checkAuth',
+  'before' => 'checkAuth',
   function()
   {
-  return View::make('booking');
-}));
+    return View::make('booking');
+  }));
 
 
 

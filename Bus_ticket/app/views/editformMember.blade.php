@@ -65,31 +65,6 @@
               </tr>
 
 
-
-               </form>
-
-
-
-            <form name="form3" method="post" action="/laravel/public/willEditName">
-              <tr>
-
-                <td> &nbsp;Name</td>
-
-                <td><input name="name" name="text_plain" />
-
-                </td>
-
-                <td><a href="#"><button type="submit" class="btn btn-default">แก้ไข Name</button></a></td>
-              </tr>
-
-
-
-               </form>
-
-
-
-
-
             </tbody>
 
           </table>
@@ -97,21 +72,18 @@
           <br>
 
         </div>
-          <center> <?php           // if(Auth::User())
-             $user = Auth::User();
 
-       
 
-   
-          echo" $user->name  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $user->username $user->tel  <br>\n";
-      
-       
+      </form>
 
-  ?></center>
-
-     
-
-      
+      <div class="row">
+        <div class="col-md-4 "></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <img src="11.jpg" width="400" height="500">
+        <img src="11.jpg" width="400" height="500">
+        <img src="11.jpg" width="400" height="500">
+      </div>
     </body>
   </html>
 @stop

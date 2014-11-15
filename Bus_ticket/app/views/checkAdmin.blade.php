@@ -48,6 +48,17 @@
 
             </tr>
 
+            <tr>
+
+              <td> &nbsp;Phone Number</td>
+
+              <td><input name="phonenum" name="text_plain" required="" autofocus="" onKeyUp="if(isNaN(this.value)){ alert('กรุณากรอกตัวเลข'); this.value='';}"/>
+
+              </td>
+
+            </tr>
+
+
 
 
           </tbody>
