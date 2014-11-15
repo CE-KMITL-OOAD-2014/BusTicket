@@ -29,7 +29,7 @@
       <div class="modal-body">
 
 
-          <form action = '/tryLogin' class="form col-md-12 center-block" method="post">
+          <form action = '/laravel/public/tryLogin' class="form col-md-12 center-block" method="post">
             <div class="form-group">
               <input type="text" class="form-control input-lg" name="txtUsername" placeholder="username" required="" autofocus="">
             </div>

@@ -16,18 +16,21 @@
     </div>
     <div class="col-md-5 col-md-offset-2">
       <input type="text" class="form-control" name="des" required="" autofocus="" placeholder="ปลายทาง"><br>
-    </div>
 
-
-    <div class="col-md-5 col-md-offset-2">
-      วันที่ออกเดินทาง:
-      <input type="date" name="bday">
-      <br><br>
-      <button type="submit" class="btn btn-default">ค้นหา</button>
     </div>
+    <div class="container">
+  <div class="col-md-8 col-md-offset-2" >
+<button type="submit" class="btn btn-default">ค้นหา</button>
+
+ </div>
+</div>
+    
   </form>
 </div>
 </div>
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

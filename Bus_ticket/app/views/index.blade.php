@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   @extends('header')
-@section('content')
 
-
+@stop
   <body>
 
 
@@ -35,4 +34,3 @@
     
   </body>
 </html>
-@stop

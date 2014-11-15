@@ -11,7 +11,7 @@
 <div class="container">
   
   <div class="text-center">
-    
+     
     
   </div>
   
@@ -31,8 +31,8 @@
        foreach($paths as $path){
 
    
-          echo" $path->source  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $path->destination $path->timego  $path->timeto <br>\n";
-     	
+echo " $path->source  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $path->destination $path->timego  $path->timeto $path->money $path->maxseat<br>\n";
+           	
        }
 
   ?></center>

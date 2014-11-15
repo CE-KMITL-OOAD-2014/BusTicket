@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-@extends('head')
+@extends('headl')
 @section('content')
 
 
@@ -28,9 +28,9 @@
     
     <div class="col-md-8 col-md-offset-4">
       
-      <form name="form1" method="post" action="#">
+      <form name="form1" method="post" action="/laravel/public/cancelBook">
 
-        ตรวจสอบการจอง <br>
+        ยกเลิกการจอง <br>
 
         <table width="400" border="1" style="width: 400px">
 
@@ -54,31 +54,36 @@
 
         </table>
 
+
+
         <br>
 
       </div>
       <div class="row">
        <div class="col-md-8 col-md-offset-5">
-        <a href="#"><button type="submit" class="btn btn-default">ตรวจสอบ</button></a>
-      </div>
-      <div class="row">
-        <div class="col-md-4 "></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <img src="11.jpg" width="400" height="500">
-        <img src="11.jpg" width="400" height="500">
-        <img src="11.jpg" width="400" height="500">
-      </div>
+        <a href="#"><button type="submit" class="btn btn-default">ยกเลิก</button></a>
+
+
+
+      
+ </div>
+</div>
+
+    </form><br>
+
+    <center>           
+       
+          
       
 
-
-    </form>
-
+  </center>
     
-    
-  </div>
-</div>
+ 
 
 </body>
 </html>
+
+  
+
+
 @stop
