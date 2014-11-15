@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 @extends('head')
+@section('content')
 
-@stop
 
   <body>
 
@@ -26,13 +26,12 @@
 <br></br>
      <div class="row">
     
-    <div class="col-md-8 col-md-offset-3">
-      <img src="11.jpg" width="500" height="500">
-      
-      
-      
+    <div class="col-md-4 col-md-offset-4">
+      <img src="11.jpg" >
+
     </div>
    </div>
     
   </body>
 </html>
+@stop

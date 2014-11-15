@@ -13,9 +13,9 @@
 
 
 
-Route::get('/homeAdmin', function()
+Route::get('/Homeadmin', function()
 {
-  return View::make('HomeAdmin');
+  return View::make('Homeadmin');
 });
 
 Route::get('/search',function()

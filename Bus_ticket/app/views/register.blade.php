@@ -2,17 +2,10 @@
 <html>
 
 @extends('header')
+@section('content')
 
-@stop
-<body class="image" >
-<style>
-	.image {
-		background-image:url('11.jpg');
-		width: 100%;
-		height: 100%;
-	}
+<body  >
 
-</style>
 <br><br><br> 
 	
 	<div class="col-md-5 col-md-offset-4">
@@ -99,7 +92,7 @@
 
 </body> 
 </html>
-    
+ @stop   
 
 
 
