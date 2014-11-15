@@ -39,7 +39,7 @@
             <div class="form-group">
               
               <input class="btn btn-primary btn-lg btn-block" type ='submit' value='Log In'>
-              <span class="pull-right"><a href="#">ลืมรหัสผ่าน</a></span>
+              <span class="pull-right"><a href="index">กลับหน้าหลัก</a></span>
             </div>
           </form>
 
