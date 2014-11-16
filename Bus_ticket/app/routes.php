@@ -13,9 +13,9 @@
 
 
 
-Route::get('/homeAdmin', function()
+Route::get('/Homeadmin', function()
 {
-  return View::make('homeAdmin');
+  return View::make('Homeadmin');
 });
 
 Route::get('/search',function()
@@ -23,32 +23,22 @@ Route::get('/search',function()
   return View::make('search');
 });
 
-Route::get('/home',array('before' => 'checkAuth','after' => 'checkAuth',function(){
-     return View::make('home');
-  }));
+Route::get('/home',function(){
+ return View::make('home');
+});
 
 
-Route::get('/searchMember',array('before' => 'checkAuth', function()
+Route::get('/searchMember', function()
 {
   return View::make('searchMember');
-}));
-
-
-
-Route::post('/cancelBook','ReservingController@cancel');
-//Route::get('/cancelBooking','ReservingController@show');
-
-
-
-Route::get('/cancelBooking',array('before' => 'checkAuth', function()
-{
-  return View::make('cancelBooking');
-}));
+});
 
 
 Route::post('/searchTrip','PathController@search');
 
-Route::post('/reservation','ReservingController@reserving');
+Route::get('/index',function(){
+  return View::make('index');
+});
 
 Route::get('/',function(){
   return View::make('index');
@@ -61,12 +51,12 @@ Route::get('/login',function()
 
 Route::post('/tryLogin','UserController@login');
 
-Route::post('/addPath','PathController@add');
+Route::post('/addPath_hide','PathController@add');
 
-Route::get('/addPath',array('before' => 'checkAuth',function()
+Route::get('/addPath',function()
 {
-  return View::make('addPath');
-}));
+  return View::make('addPath_hide');
+});
 
 Route::get('/showPath',function()
 {
@@ -74,25 +64,16 @@ Route::get('/showPath',function()
 });
 
 
-Route::get('/updateStatus',function()
-{
-  return View::make('updateStatus');
-});
-
-Route::post('/updateStatus','ReservingController@update');
-
-
-
-Route::get('/showPathAdmin',array('before' => 'checkAuth',function()
+Route::get('/showPathAdmin',function()
 {
   return View::make('showPathAdmin');
-}));
+});
 
 
-Route::get('/showPathMember',array('before' => 'checkAuth',function()
+Route::get('/showPathMember',function()
 {
   return View::make('showPathMember');
-}));
+});
 
 Route::post('/logout','UserController@logout');
 
@@ -107,12 +88,11 @@ Route::post('/willRegister','UserController@register');
 
 Route::post('/willEditTelephone','UserController@editTel');
 Route::post('/willEditPassword','UserController@editPass');
-Route::post('/willEditName','UserController@editName');
 
-Route::get('/editformMember',array('before' => 'checkAuth', function()
+Route::get('/editformMember', function()
 {
   return View::make('editformMember');
-}));
+});
 //Route::post('/willRegister','UserController@edit');
 
 
@@ -122,10 +102,10 @@ Route::get('/a', function()
 });
 
 
-Route::get('/howtoMember',array('before'=>'checkAuth','after'=>'checkAuth',function()
+Route::get('/howtoMember',function()
 {
   return View::make('howtoMember');
-}));
+});
 
 
 
@@ -136,36 +116,17 @@ Route::get('/fin', function()
   return View::make('fin');
 });
 
-Route::get('/bkk-cm', function()
-{
-  return View::make('bkk-cm');
-});
-
-Route::get('/bkk-cr', function()
-{
-  return View::make('bkk-cr');
-});
-Route::get('/bkk-kk', function()
-{
-  return View::make('bkk-kk');
-});
-Route::get('/bkk-nsr', function()
-{
-  return View::make('bkk-nsr');
-});
-Route::get('/bkk-ud', function()
-{
-  return View::make('bkk-ud');
-});
-
-
 
 Route::get('/howto', function()
 {
   return View::make('howto');
 });
 
-Route::get('/checkMember','ReservingController@show');
+Route::get('/checkMember', function()
+{
+  return View::make('checkMember');
+});
+
 
 Route::get('/checkAdmin', function()
 {
@@ -173,12 +134,11 @@ Route::get('/checkAdmin', function()
 });
 
 
-Route::get('/booking', array(
-    'before' => 'checkAuth',
+Route::get('/booking', 
   function()
   {
-  return View::make('booking');
-}));
+    return View::make('booking');
+  });
 
 
 
