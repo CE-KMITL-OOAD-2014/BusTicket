@@ -28,7 +28,7 @@
     
     <div class="col-md-8 col-md-offset-4">
       
-      <form name="form1" method="post" action="/laravel/public/updateStatus">
+      <form name="form1" method="post" action="/updateStatus">
 
         ปรับปรุงสถานะการจอง <br>
 
@@ -60,7 +60,7 @@
       </div>
       <div class="row">
        <div class="col-md-8 col-md-offset-5">
-        <a href="#"><button type="submit" class="btn btn-default">ปรับปรุง</button></a>
+        <button type="submit" class="btn btn-default">ปรับปรุง</button>
       
  </div>
 </div>

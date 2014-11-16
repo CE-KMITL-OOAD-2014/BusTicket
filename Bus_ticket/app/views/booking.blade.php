@@ -54,11 +54,11 @@
 
             <div class="row">
              <div class="col-xs-12 col-sm-6 col-md-8">
-               {{$trip->source}} &nbsp; &nbsp; &nbsp;  
-               {{$trip->destination}} &nbsp; &nbsp; &nbsp;  
-               {{$trip->timego}} &nbsp; &nbsp; &nbsp;  
-               {{$trip->timeto}} &nbsp; &nbsp; &nbsp; 
-               {{$trip->money}} 
+               ต้นทาง &nbsp;{{$trip->source}} &nbsp; &nbsp; &nbsp;  
+               ปลายทาง &nbsp;{{$trip->destination}} &nbsp; &nbsp; &nbsp;  
+               เวลาออก &nbsp;{{$trip->timego}} &nbsp; &nbsp; &nbsp;  
+               เวลาถึง &nbsp;{{$trip->timeto}} &nbsp; &nbsp; &nbsp; 
+               ราคา/ที่&nbsp;{{$trip->money}} 
              </div>
              <form action="/reservation" method="post">
                <div class="col-xs-12 col-sm-6 col-md-8">
@@ -77,7 +77,7 @@
 
 
                 <div class="col-md-5 col-md-offset-2">
-                  วันที่ออกเดินทาง:
+                 <br><br> วันที่ออกเดินทาง:
                   <input type="date" name="bday">
                   <br><br>
 
