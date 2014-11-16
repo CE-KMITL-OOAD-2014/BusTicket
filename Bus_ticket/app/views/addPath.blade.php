@@ -4,142 +4,142 @@
 
 @stop
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-  </head>
-<title>เพิ่มเส้นทาง</title>
-
-
-<body>
+    </head>
+    <title>เพิ่มเส้นทาง</title>
 
 
-
-
-  <div class="container">
-
-    <div class="text-center">
-
-
-    </div>
-
-  </div><!-- /.container -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <br></br>
-  <br></br>
-  <div class="row">
-
-    <div class="col-md-8 col-md-offset-4">
-
-    <form name="form1" method="post" action="/addPath">
-
-        เพิ่มเส้นทางการเดินทาง <br>
-
-        <table width="400" border="1" style="width: 400px">
-
-          <tbody>
+    <body>
 
 
 
-            <tr>
 
-              <td> &nbsp;ต้นทาง</td>
+      <div class="container">
 
-              <td><input name="source" type="text" required="" autofocus="" >
-
-              </td>
-
-            </tr>
-
-            <tr>
-
-              <td> &nbsp;ปลายทาง</td>
-
-              <td><input name="des" type="text" required="" autofocus="" >
-
-              </td>
-
-            </tr>
-             <tr>
-
-              <td> &nbsp;เวลาออก</td>
-
-              <td><input name="timego" type="text" required="" autofocus="">
-
-              </td>
-
-            </tr>
-
-            <tr>
-
-              <td> &nbsp;เวลาถึง</td>
-
-              <td><input name="timeto" type="text" required="" autofocus="">
-
-              </td>
-
-            </tr>
-
-            <tr>
-
-              <td> &nbsp;ราคา</td>
-
-              <td><input name="money" type="number" required="" autofocus="">
-
-              </td>
-
-            </tr>
-
-             <tr>
-
-              <td> &nbsp;จำนวนที่นั่งสูงสุด</td>
-
-              <td><input name="maxSeat" type="number" required="" autofocus="">
-
-              </td>
-
-            </tr>
+        <div class="text-center">
 
 
-          </tbody>
+        </div>
 
-        </table>
+      </div><!-- /.container -->
 
-        <br>
-
-      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <br></br>
+      <br></br>
       <div class="row">
-       <div class="col-md-8 col-md-offset-5">
-        <a href="#"><button type="submit" class="btn btn-default">เพิ่มเส้นทาง</button></a><br><br>
-      </div>
-      <center> 
+
+        <div class="col-md-8 col-md-offset-4">
+
+          <form name="form1" method="post" action="/addPath">
+
+            เพิ่มเส้นทางการเดินทาง <br>
+
+            <table width="400" border="1" style="width: 400px">
+
+              <tbody>
+
+
+
+                <tr>
+
+                  <td> &nbsp;ต้นทาง</td>
+
+                  <td><input name="source" type="text" required="" autofocus="" >
+
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td> &nbsp;ปลายทาง</td>
+
+                  <td><input name="des" type="text" required="" autofocus="" >
+
+                  </td>
+
+                </tr>
+                <tr>
+
+                  <td> &nbsp;เวลาออก</td>
+
+                  <td><input name="timego" type="text" required="" autofocus="">
+
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td> &nbsp;เวลาถึง</td>
+
+                  <td><input name="timeto" type="text" required="" autofocus="">
+
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td> &nbsp;ราคา</td>
+
+                  <td><input name="money" type="number" required="" autofocus="">
+
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td> &nbsp;จำนวนที่นั่งสูงสุด</td>
+
+                  <td><input name="maxSeat" type="number" required="" autofocus="">
+
+                  </td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+
+            <br>
+
+          </div>
+          <div class="row">
+           <div class="col-md-8 col-md-offset-5">
+            <a href="#"><button type="submit" class="btn btn-default">เพิ่มเส้นทาง</button></a><br><br>
+          </div>
+          <center> 
 
       <?php           // if(Auth::User())
-       $paths = Path::all();
+      $paths = Path::all();
 
-       foreach($paths as $path){
+      foreach($paths as $path){
 
-   
-          echo" ต้นทาง  &nbsp;$path->source  &nbsp; &nbsp; &nbsp;   ปลายทาง &nbsp; $path->destination  &nbsp; &nbsp; เวลาออกรถ &nbsp;$path->timego &nbsp; &nbsp; เวลาถึง  &nbsp; $path->timeto  &nbsp; &nbsp;  ราคา  &nbsp;$path->money  &nbsp; &nbsp; จำนวนที่นั่ง  &nbsp; $path->maxseat<br>\n";
-      
-       }
+       
+        echo" ต้นทาง  &nbsp;$path->source  &nbsp; &nbsp; &nbsp;   ปลายทาง &nbsp; $path->destination  &nbsp; &nbsp; เวลาออกรถ &nbsp;$path->timego &nbsp; &nbsp; เวลาถึง  &nbsp; $path->timeto  &nbsp; &nbsp;  ราคา  &nbsp;$path->money  &nbsp; &nbsp; จำนวนที่นั่ง  &nbsp; $path->maxseat<br>\n";
+        
+      }
 
-  ?></center>
+      ?></center>
 
 
 

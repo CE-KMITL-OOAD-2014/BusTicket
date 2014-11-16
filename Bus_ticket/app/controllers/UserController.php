@@ -1,44 +1,38 @@
 <?php
-	class UserController extends BaseController{
-		protected $id;
-
-		public function login(){
-		 $usernameInput = Input::get('txtUsername');
-		 $passwordInput = Input::get('txtPassword');
+class UserController extends BaseController{
+	public function login(){
+		$usernameInput = Input::get('txtUsername');
+		$passwordInput = Input::get('txtPassword');
 		
-	
-		 $usertry = array(
-		 	'username' => $usernameInput,
-		 	'password'	=>  $passwordInput
-		 	);
-		
-		 if (Auth::attempt($usertry)){ 
-		 	 $check = Auth::User()->username;	
-		 	 if($check=='admin') return View::make('homeAdmin');
-		 	 else return View::make('home');
-		 } //$user=Auth::validate(Input::all());
-		 else return Redirect::to('/');
+		$usertry = array(
+			'username' => $usernameInput,
+			'password'	=>  $passwordInput
+			);
+		if (Auth::attempt($usertry)){ 
+			$check = Auth::User()->username;	
+			if($check=='admin') return View::make('homeAdmin');
+			else return View::make('home');
+		} 
+		else return Redirect::to('/');
 	}
 
 	public function register(){
 		$validator= Validator::make(Input::all(),
-				array(
-					"username"=>"unique:users|required",
-						"password"=>"required",
-					//"phonenum"=>"unique:users",
-			));
+			array(
+				"username"=>"unique:users|required",
+				"password"=>"required",
+
+				));
 
 		if($validator->fails()){
 			return Redirect::to('register');
 
 		}else{
 
-		$username = Input::get('username');
-		$name = Input::get('name');
-		$password = Input::get('password');
-		$telephone = Input::get('phonenum');
-
-		
+			$username = Input::get('username');
+			$name = Input::get('name');
+			$password = Input::get('password');
+			$telephone = Input::get('phonenum');
 
 			$newUser = new User();
 			$newUser->username = $username;
@@ -49,7 +43,7 @@
 
 			return Redirect::to('fin');
 		}
-	
+
 	}
 
 	public function logout(){
@@ -59,38 +53,18 @@
 
 
 	public function editTel(){
-
-		//$pass = Input::get('password');
 		$telephone = Input::get('phonenum');
-
 		$id = Auth::User()->id;
-
-		//Auth::User()->tel=$telephone;
-
-		//$this->user = Auth::user();
-
-		//$user->password =  Hash::make($pass);
-		//$user->tel = $telephone;
 
 		User::where('id',$id)->update(array(
 			'tel'=>$telephone,
 			));
-
 		return Redirect::to('editformMember');
-
 	}
 
-		public function editPass(){
-
+	public function editPass(){
 		$pass = Hash::make(Input::get('password'));
 		$id = Auth::User()->id;
-
-		//Auth::User()->tel=$telephone;
-
-		//$this->user = Auth::user();
-
-		//$user->password =  Hash::make($pass);
-		//$user->tel = $telephone;
 
 		User::where('id',$id)->update(array(
 			'password'=>$pass
@@ -101,7 +75,7 @@
 	}
 
 
-		public function editName(){
+	public function editName(){
 
 		$name = Input::get('name');
 		$id = Auth::User()->id;
@@ -121,5 +95,5 @@
 
 	}
 
-	}
+}
 ?>

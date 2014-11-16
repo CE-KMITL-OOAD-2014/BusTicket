@@ -78,44 +78,29 @@
 
                 <div class="col-md-5 col-md-offset-2">
                  <br><br> วันที่ออกเดินทาง:
-                  <input type="date" name="bday">
-                  <br><br>
+                 <input type="date" name="bday">
+                 <br><br>
 
-                </div>
+               </div>
 
-                <input type="submit" value="ยืนยัน">
-                <input type="hidden" name="id" value={{$trip->id}}>   
-
-
-              </form>
-              <!-- <a href="#"><button type="submit" class="btn btn-default">ยืนยัน</button> </a> -->
-              <br><br>     
-            </div>
-          </div>
+               <input type="submit" value="ยืนยัน">
+               <input type="hidden" name="id" value={{$trip->id}}>   
 
 
-
-          @endforeach
+             </form>
+             <!-- <a href="#"><button type="submit" class="btn btn-default">ยืนยัน</button> </a> -->
+             <br><br>     
+           </div>
+         </div>
 
 
 
-
-          @endif
+         @endforeach
 
 
 
 
-
-
-
-
-
-          <br>
-          <!--</form> -->
-        </div>
-
-      </div>
-      <div class="row">
+         @endif
 
 
 
@@ -124,8 +109,23 @@
 
 
 
-      </div>
 
-    </body>
-    </html>
-    @stop
+         <br>
+         <!--</form> -->
+       </div>
+
+     </div>
+     <div class="row">
+
+
+
+
+
+
+
+
+     </div>
+
+   </body>
+   </html>
+   @stop
