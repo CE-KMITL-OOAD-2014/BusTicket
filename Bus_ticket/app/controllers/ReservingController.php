@@ -74,7 +74,7 @@
 				$reserve->status = "1";
 				$reserve->save(); 
 			}
-			return Redirect::to('updateStatus');
+			return View::make('updateStatus');
 		}
 
 		public function cancel(){

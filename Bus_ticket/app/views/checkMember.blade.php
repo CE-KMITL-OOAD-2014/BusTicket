@@ -26,7 +26,7 @@
   <br></br>
   <div class="row">
     
-    <div class="col-md-8 col-md-offset-4">
+    <div class="col-md-8 col-md-offset-1">
 
 
         ตรวจสอบการจอง  <br>
@@ -56,11 +56,13 @@
          &nbsp; &nbsp; ราคา &nbsp;   {{$reserve->money}} 
 
          &nbsp; &nbsp;  จำนวนที่นั่งที่จอง &nbsp;  {{$reserve->seat}} 
-          <br>
+          <br><br>
           
        
        @endforeach
     @endif
+    <br><br><br>
+    *หมาเหตุ สถานะการชำระเงิน 0 = ค้างชำระ 1=ชำระแล้ว
 
   </center>
     

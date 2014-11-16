@@ -125,9 +125,11 @@
       </div>
       <div class="row">
        <div class="col-md-8 col-md-offset-5">
-        <a href="#"><button type="submit" class="btn btn-default">เพิ่มเส้นทาง</button></a>
+        <a href="#"><button type="submit" class="btn btn-default">เพิ่มเส้นทาง</button></a><br><br>
       </div>
-      <center> <?php           // if(Auth::User())
+      <center> 
+
+      <?php           // if(Auth::User())
        $paths = Path::all();
 
        foreach($paths as $path){

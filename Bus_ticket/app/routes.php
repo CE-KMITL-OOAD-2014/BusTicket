@@ -77,6 +77,8 @@ Route::get('/showPathMember',function()
 
 Route::post('/logout','UserController@logout');
 
+Route::get('/updateStatus','ReservingController@update');
+
 Route::get('/register', function()
 {
   return View::make('register');

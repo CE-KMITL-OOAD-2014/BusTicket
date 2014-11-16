@@ -73,7 +73,7 @@
        foreach($reserves as $reserve){
 
    
-          echo"$reserve->id $reserve->status  $reserve->username  $reserve->source  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $reserve->destination $reserve->timego  $reserve->timeto $reserve->seat  &nbsp; &nbsp; &nbsp; &nbsp;";
+          echo"รหัสการจอง &nbsp; $reserve->id &nbsp;&nbsp;สถานะการชำระ&nbsp;$reserve->status &nbsp;&nbsp;ชื่อผู้ใช้&nbsp;  $reserve->username&nbsp;&nbsp;ต้นทาง&nbsp;  $reserve->source   &nbsp; &nbsp; ปลายทาง&nbsp; $reserve->destination &nbsp;&nbsp;เวลาออก&nbsp; $reserve->timego &nbsp;&nbsp;เวลาถึง&nbsp; $reserve->timeto &nbsp;&nbsp; จำนวนที่นั่ง&nbsp;$reserve->seat  &nbsp; &nbsp;ราคา&nbsp;";
            echo $reserve->money*$reserve->seat; echo "<br>\n";
           
        }
