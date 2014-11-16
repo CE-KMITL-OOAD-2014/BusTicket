@@ -30,7 +30,7 @@
       
       <form name="form1" method="post" action="/laravel/public/cancelBook">
 
-        ยกเลิกการจอง <br>
+        ยกเลิกการจอง dswedg<br>
 
         <table width="400" border="1" style="width: 400px">
 
