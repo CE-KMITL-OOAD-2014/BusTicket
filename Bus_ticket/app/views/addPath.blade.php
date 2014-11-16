@@ -46,7 +46,7 @@
 
     <div class="col-md-8 col-md-offset-4">
 
-    <form name="form1" method="post" action="/laravel/public/addPath">
+    <form name="form1" method="post" action="/addPath">
 
         เพิ่มเส้นทางการเดินทาง <br>
 

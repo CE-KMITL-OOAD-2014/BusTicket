@@ -16,7 +16,7 @@ class CreateUser extends Migration {
             $table->increments('id');
             $table->string('username', 30)->unique()->nullable(false);
             $table->string('password', 65)->nullable(false);
-            $table->string('name', 30)->unique()->nullable(false);
+            $table->string('name', 30)->nullable(false);
            /* $table->string('lastname', 30)->unique()->nullable(false);
             $table->string('age', 20)->nullable(false);
             $table->string('gender', 20)->nullable(false);

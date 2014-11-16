@@ -13,9 +13,9 @@
 
 
 
-Route::get('/Homeadmin', function()
+Route::get('/homeAdmin', function()
 {
-  return View::make('Homeadmin');
+  return View::make('homeAdmin');
 });
 
 Route::get('/search',function()
@@ -141,7 +141,15 @@ Route::get('/booking',
     return View::make('booking');
   });
 
+Route::post('/cancelBook','ReservingController@cancel');
+//Route::get('/cancelBooking','ReservingController@show');
 
+
+
+Route::get('/cancelBooking',function()
+{
+  return View::make('cancelBooking');
+});
 
 
 

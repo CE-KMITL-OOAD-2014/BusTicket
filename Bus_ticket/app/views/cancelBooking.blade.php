@@ -28,9 +28,9 @@
     
     <div class="col-md-8 col-md-offset-4">
       
-      <form name="form1" method="post" action="/laravel/public/cancelBook">
+      <form name="form1" method="post" action="/cancelBook">
 
-        ยกเลิกการจอง dswedg<br>
+        ยกเลิกการจอง <br>
 
         <table width="400" border="1" style="width: 400px">
 
