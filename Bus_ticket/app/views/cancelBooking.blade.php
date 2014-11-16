@@ -61,7 +61,7 @@
       </div>
       <div class="row">
        <div class="col-md-8 col-md-offset-5">
-        <a href="#"><button type="submit" class="btn btn-default">ยกเลิก</button></a>
+        <button type="submit" class="btn btn-default">ยกเลิก</button>
 
 
 
