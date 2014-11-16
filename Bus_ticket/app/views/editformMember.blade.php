@@ -29,9 +29,9 @@
 
       <div class="col-md-8 col-md-offset-4">
 
-        <form name="form1" method="post" action="/laravel/public/willEditPassword">
+        <form name="form1" method="post" action="/willEditPassword">
 
-          Edit Form <br>
+          Edit  <br>
 
           <table width="400" border="1" style="width: 400px">
 
@@ -52,7 +52,7 @@
 
             </form>
 
-            <form name="form2" method="post" action="/laravel/public/willEditTelephone">
+            <form name="form2" method="post" action="/willEditTelephone">
               <tr>
 
                 <td> &nbsp;Phone Number</td>
@@ -70,7 +70,7 @@
 
 
 
-            <form name="form3" method="post" action="/laravel/public/willEditName">
+            <form name="form3" method="post" action="/willEditName">
               <tr>
 
                 <td> &nbsp;Name</td>
