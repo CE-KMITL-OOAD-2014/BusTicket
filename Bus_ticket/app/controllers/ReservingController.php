@@ -1,10 +1,8 @@
 <?php
 class ReservingController extends BaseController{
 
-
+	//reserve path for each user with differrent or same date
 	public function reserving(){
-
-			//date_default_timezone_set('Australia/Melbourne');
 		$date = date('m/d/Y h:i:s a', time());
 		$dateInput = Input::get('bday');
 
@@ -22,9 +20,7 @@ class ReservingController extends BaseController{
 		$reserves=DB::table('reserves')->where('source',$sourceInput)->where('destination',$destinationInput)->where('date',$dateInput)->get();		
 		$temp=0;
 		foreach($reserves as $reserve){
-
 			$temp=$temp+$reserve->seat;
-
 		}
 		$temp=$temp+$seatInput;
 
@@ -49,6 +45,7 @@ class ReservingController extends BaseController{
 
 		}
 
+		//update reservation for each user
 		public function update(){
 			$reserve = Reserve::find(Input::get('id'));
 			if($reserve){
@@ -58,6 +55,7 @@ class ReservingController extends BaseController{
 			return View::make('updateStatus');
 		}
 
+		//delete reservation which user don't want
 		public function cancel(){
 			$reserve = Reserve::find(Input::get('id'));
 
@@ -72,6 +70,7 @@ class ReservingController extends BaseController{
 			}
 		}
 
+		//show reservation for each user
 		public function show(){
 			$user = Auth::User();
 			$username=$user->username;

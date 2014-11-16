@@ -1,6 +1,7 @@
 <?php
 class PathController extends BaseController{
-	// set source path , destination path , time , cost and number of seat 
+
+	// add path (set source path , destination path , time , cost and number of seat) 
 	public function add(){
 		$sourceInput = Input::get('source'); 
 		$destinationInput = Input::get('des');
@@ -19,8 +20,9 @@ class PathController extends BaseController{
 		$newPath->seat = $maxseatInput;
 		$newPath->save();
 		return Redirect::to('addPath');
-
 	}
+
+	//search for need path 
 	public function search(){
 		$sourceInput = Input::get('source'); 
 		$destinationInput = Input::get('des');

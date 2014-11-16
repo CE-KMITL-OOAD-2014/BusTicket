@@ -1,5 +1,7 @@
 <?php
 class UserController extends BaseController{
+
+	//user log in
 	public function login(){
 		$usernameInput = Input::get('txtUsername');
 		$passwordInput = Input::get('txtPassword');
@@ -16,6 +18,7 @@ class UserController extends BaseController{
 		else return Redirect::to('/');
 	}
 
+	//registration for user
 	public function register(){
 		$validator= Validator::make(Input::all(),
 			array(
@@ -46,12 +49,13 @@ class UserController extends BaseController{
 
 	}
 
+	//user log out
 	public function logout(){
 		Auth::logout();
 		return Redirect::to('/');
 	}
 
-
+	//edit telephone number for user
 	public function editTel(){
 		$telephone = Input::get('phonenum');
 		$id = Auth::User()->id;
@@ -62,6 +66,7 @@ class UserController extends BaseController{
 		return Redirect::to('editformMember');
 	}
 
+	//edit password for user
 	public function editPass(){
 		$pass = Hash::make(Input::get('password'));
 		$id = Auth::User()->id;
@@ -71,28 +76,18 @@ class UserController extends BaseController{
 			));
 
 		return Redirect::to('editformMember');
-
 	}
 
-
+	//edit name for user 
 	public function editName(){
 
 		$name = Input::get('name');
 		$id = Auth::User()->id;
 
-		//Auth::User()->tel=$telephone;
-
-		//$this->user = Auth::user();
-
-		//$user->password =  Hash::make($pass);
-		//$user->tel = $telephone;
-
 		User::where('id',$id)->update(array(
 			'name'=>$name
 			));
-
 		return Redirect::to('editformMember');
-
 	}
 
 }
