@@ -27,7 +27,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/home"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="/home"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
@@ -40,7 +40,7 @@
    <li><a href="/laravel/public/searchMember">จองตั๋วรถ</a></li>
 
       <li><a href="/laravel/public/cancelBooking">ยกเลิกการจองตั๋วรถ</a></li>
-      <li><a href="/laravel/public/checkMember">ตรวจสอบการจอง</a></li>
+      <li><a href="/checkMember">ตรวจสอบการจอง</a></li>
       <li><a href="/laravel/public/editformMember">แก้ไขข้อมูลสมาชิก</a></li>
     </ul>
     
