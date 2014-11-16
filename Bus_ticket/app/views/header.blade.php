@@ -27,7 +27,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="/"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
@@ -35,22 +35,22 @@
     
     <ul class="nav navbar-nav">
 
-      <li><a href="/laravel/public/howto">วิธีจอง</a></li>
-      <li><a href="/laravel/public/showPath">แสดงเส้นทาง</a></li>
+      <li><a href="/howto">วิธีจอง</a></li>
+      <li><a href="/showPath">แสดงเส้นทาง</a></li>
      
      <?php
       //<li><a href="#">จองตั๋วรถ</a></li>
       //<li><a href="/laravel/public/check">ตรวจสอบการจอง</a></li>
 
        ?>
-      <li><a href="/laravel/public/register">สมัครสมาชิก</a></li>
+      <li><a href="/register">สมัครสมาชิก</a></li>
      
     </ul>
     
     
 		
      <div class="col-sm-3 col-md-1 pull-right">
-       <a href="/laravel/public/login"><button type="submit" class="btn btn-default">Log In</button></a>
+       <a href="/login"><button type="submit" class="btn btn-default">Log In</button></a>
       
     
     </div>

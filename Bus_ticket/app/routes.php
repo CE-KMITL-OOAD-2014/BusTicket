@@ -88,6 +88,7 @@ Route::post('/willRegister','UserController@register');
 
 Route::post('/willEditTelephone','UserController@editTel');
 Route::post('/willEditPassword','UserController@editPass');
+Route::post('/willEditName','UserController@editName');
 
 Route::get('/editformMember', function()
 {

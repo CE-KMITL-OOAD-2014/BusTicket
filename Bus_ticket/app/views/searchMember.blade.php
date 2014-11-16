@@ -10,7 +10,7 @@
 <div class="container">
   <div class="col-md-8 col-md-offset-3" style="margin-left:1000;">
 
-    <form action="/laravel/public/searchTrip" method="post">
+    <form action="/searchTrip" method="post">
      <div class="col-md-5 col-md-offset-2">
      <input type="text" class="form-control" name="source" required="" autofocus="" placeholder="ต้นทาง"><br>
     </div>

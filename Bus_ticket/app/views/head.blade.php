@@ -27,7 +27,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		  <a class="navbar-brand" rel="home" href="/laravel/public/homeAdmin"><span class="glyphicon glyphicon-home"></span></a>
+		  <a class="navbar-brand" rel="home" href="/homeAdmin"><span class="glyphicon glyphicon-home"></span></a>
 
   </div>
   
@@ -36,9 +36,9 @@
     <ul class="nav navbar-nav">
 
     
-      <li><a href="/laravel/public/updateStatus">ปรับปรุงสถานะการจอง</a></li>
+      <li><a href="/updateStatus">ปรับปรุงสถานะการจอง</a></li>
      
-       <li><a href="/laravel/public/addPath">เพิ่มเส้นทางการเดินทาง</a></li>
+       <li><a href="/addPath">เพิ่มเส้นทางการเดินทาง</a></li>
     
     </ul>
     
@@ -46,7 +46,7 @@
 		
      <div class="col-sm-3 col-md-3 pull-right">
        <?php //<a href="/laravel/public/login"><button type="submit" class="btn btn-default">Log In</button></a> ?>
-       <form action ="/laravel/public/logout" method="post"><button type="submit" class="btn btn-default">log out</button></form>
+       <form action ="/logout" method="post"><button type="submit" class="btn btn-default">log out</button></form>
     
     </div>
 	</div>

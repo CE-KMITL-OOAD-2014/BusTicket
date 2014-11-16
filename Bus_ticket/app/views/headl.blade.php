@@ -41,9 +41,9 @@
 
       <li><a href="/cancelBooking">ยกเลิกการจองตั๋วรถ</a></li>
       <li><a href="/checkMember">ตรวจสอบการจอง</a></li>
-      <li><a href="/editformMember">แก้ไขข้อมูลสมาชิก wrfwrfwfr</a></li>
+      <li><a href="/editformMember">แก้ไขข้อมูลสมาชิก </a></li>
     </ul>
-    lkihugukyvgkiugyvkugyhvkulyhbl.kjhb;j/uk
+   
     
 		
      <div class="col-sm-3 col-md-1 pull-right">
