@@ -12,18 +12,18 @@
 
     <form action="/searchTrip" method="post">
      <div class="col-md-5 col-md-offset-2">
-     <input type="text" class="form-control" name="source" required="" autofocus="" placeholder="ต้นทาง"><br>
-    </div>
-    <div class="col-md-5 col-md-offset-2">
+       <input type="text" class="form-control" name="source" required="" autofocus="" placeholder="ต้นทาง"><br>
+     </div>
+     <div class="col-md-5 col-md-offset-2">
       <input type="text" class="form-control" name="des" required="" autofocus="" placeholder="ปลายทาง"><br>
 
     </div>
     <div class="container">
-  <div class="col-md-8 col-md-offset-2" >
-<button type="submit" class="btn btn-default">ค้นหา</button>
+      <div class="col-md-8 col-md-offset-2" >
+        <button type="submit" class="btn btn-default">ค้นหา</button>
 
- </div>
-</div>
+      </div>
+    </div>
     
   </form>
 </div>

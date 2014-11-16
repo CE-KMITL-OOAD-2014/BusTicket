@@ -12,9 +12,9 @@
 
     <form action="">
      <div class="col-md-5 col-md-offset-2">
-     <input type="text" class="form-control" name="search" required="" autofocus="" placeholder="ต้นทาง"><br>
-    </div>
-    <div class="col-md-5 col-md-offset-2">
+       <input type="text" class="form-control" name="search" required="" autofocus="" placeholder="ต้นทาง"><br>
+     </div>
+     <div class="col-md-5 col-md-offset-2">
       <input type="text" class="form-control" name="des" required="" autofocus="" placeholder="ปลายทาง"><br>
     </div>
 

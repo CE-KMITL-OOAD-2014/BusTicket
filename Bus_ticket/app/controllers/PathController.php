@@ -1,6 +1,6 @@
 <?php
 class PathController extends BaseController{
-	
+	// set source path , destination path , time , cost and number of seat 
 	public function add(){
 		$sourceInput = Input::get('source'); 
 		$destinationInput = Input::get('des');

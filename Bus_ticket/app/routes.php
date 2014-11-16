@@ -86,8 +86,6 @@ Route::get('/register', function()
   return View::make('register');
 });
 
-
-
 Route::post('/willRegister','UserController@register');
 
 Route::post('/willEditTelephone','UserController@editTel');
@@ -100,18 +98,10 @@ Route::get('/editformMember', function()
 });
 //Route::post('/willRegister','UserController@edit');
 
-
-Route::get('/a', function()
-{
-  return View::make('tring');
-});
-
-
 Route::get('/howtoMember',function()
 {
   return View::make('howtoMember');
 });
-
 
 
 Route::get('/fincancel', function()
@@ -138,15 +128,12 @@ Route::get('/checkAdmin', function()
   return View::make('checkAdmin');
 });
 
-
-Route::get('/booking', 
-  function()
-  {
-    return View::make('booking');
-  });
+Route::get('/booking', function()
+{
+  return View::make('booking');
+});
 
 Route::post('/cancelBook','ReservingController@cancel');
-//Route::get('/cancelBooking','ReservingController@show');
 
 Route::post('/reservation','ReservingController@reserving');
 
@@ -154,7 +141,5 @@ Route::get('/cancelBooking',function()
 {
   return View::make('cancelBooking');
 });
-
-
 
 ?>
