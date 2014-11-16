@@ -110,7 +110,10 @@ Route::get('/howtoMember',function()
 
 
 
-
+Route::get('/fincancel', function()
+{
+  return View::make('fincancel');
+});
 
 Route::get('/fin', function()
 {
@@ -123,10 +126,7 @@ Route::get('/howto', function()
   return View::make('howto');
 });
 
-Route::get('/checkMember', function()
-{
-  return View::make('checkMember');
-});
+Route::get('/checkMember','ReservingController@show');
 
 
 Route::get('/checkAdmin', function()
@@ -144,7 +144,7 @@ Route::get('/booking',
 Route::post('/cancelBook','ReservingController@cancel');
 //Route::get('/cancelBooking','ReservingController@show');
 
-
+Route::post('/reservation','ReservingController@reserving');
 
 Route::get('/cancelBooking',function()
 {

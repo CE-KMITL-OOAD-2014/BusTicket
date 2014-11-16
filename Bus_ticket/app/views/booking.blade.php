@@ -60,7 +60,7 @@
                {{$trip->timeto}} &nbsp; &nbsp; &nbsp; 
                {{$trip->money}} 
              </div>
-             <form action="/laravel/public/reservation" method="post">
+             <form action="/reservation" method="post">
                <div class="col-xs-12 col-sm-6 col-md-8">
                 <select name="seat"class="form-control">
                   <option value=1>1</option>

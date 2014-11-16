@@ -46,16 +46,16 @@
         @foreach($reserves as $reserve)
 
    
-          {{$reserve->id}}  
-          {{$reserve->status}}  
-          {{$reserve->source}}  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-          {{$reserve->destination}} 
-          {{$reserve->timego}}  
-          {{$reserve->timeto}} 
-            {{$reserve->date}} 
-            {{$reserve->money}} 
+         รหัสการจอง  &nbsp; {{$reserve->id}}  
+         &nbsp; &nbsp; สถานะการชำระเงิน &nbsp; {{$reserve->status}}  
+         &nbsp; &nbsp;  ต้นทาง &nbsp; {{$reserve->source}}   
+         &nbsp; &nbsp;ปลายทาง &nbsp; {{$reserve->destination}} 
+         &nbsp; &nbsp;   เวลาออก &nbsp;{{$reserve->timego}}  
+         &nbsp; &nbsp; เวลาถึง &nbsp; {{$reserve->timeto}} 
+         &nbsp; &nbsp; วันเ/เดือน/ปีที่จอง &nbsp;   {{$reserve->date}} 
+         &nbsp; &nbsp; ราคา &nbsp;   {{$reserve->money}} 
 
-            {{$reserve->seat}} 
+         &nbsp; &nbsp;  จำนวนที่นั่งที่จอง &nbsp;  {{$reserve->seat}} 
           <br>
           
        

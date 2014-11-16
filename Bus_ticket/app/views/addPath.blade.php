@@ -133,7 +133,7 @@
        foreach($paths as $path){
 
    
-          echo" $path->source  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $path->destination $path->timego  $path->timeto  $path->money $path->maxseat $path->seat<br>\n";
+          echo" ต้นทาง  &nbsp;$path->source  &nbsp; &nbsp; &nbsp;   ปลายทาง &nbsp; $path->destination  &nbsp; &nbsp; เวลาออกรถ &nbsp;$path->timego &nbsp; &nbsp; เวลาถึง  &nbsp; $path->timeto  &nbsp; &nbsp;  ราคา  &nbsp;$path->money  &nbsp; &nbsp; จำนวนที่นั่ง  &nbsp; $path->maxseat<br>\n";
       
        }
 

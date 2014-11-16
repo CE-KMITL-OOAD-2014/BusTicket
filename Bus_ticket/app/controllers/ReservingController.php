@@ -59,7 +59,7 @@
 				
 
 				$newReserve->save();
-			return View::make('home');
+			return View::make('finreserv');
 			}else {
 				$trips = DB::table('paths')->where('source', $sourceInput)->Where('destination',$destinationInput)->get();
 				return View::make('booking')->with('trips',$trips);
@@ -87,7 +87,7 @@
 
 				$reserve->delete();
 				//$reserve->save();
-				return View::make('cancelBooking');
+				return View::make('fincancel');
 			}
 		}
 
