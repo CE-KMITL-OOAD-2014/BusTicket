@@ -41,7 +41,7 @@
 
       <li><a href="/laravel/public/cancelBooking">ยกเลิกการจองตั๋วรถ</a></li>
       <li><a href="/checkMember">ตรวจสอบการจอง</a></li>
-      <li><a href="/laravel/public/editformMember">แก้ไขข้อมูลสมาชิก</a></li>
+      <li><a href="/editformMember">แก้ไขข้อมูลสมาชิก</a></li>
     </ul>
     
     
