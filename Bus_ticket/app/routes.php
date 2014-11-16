@@ -51,11 +51,11 @@ Route::get('/login',function()
 
 Route::post('/tryLogin','UserController@login');
 
-Route::post('/addPath_hide','PathController@add');
+Route::post('/addPath','PathController@add');
 
 Route::get('/addPath',function()
 {
-  return View::make('addPath_hide');
+  return View::make('addPath');
 });
 
 Route::get('/showPath',function()
