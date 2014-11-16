@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+@extends('head')
+@section('content')
+
+
+
+<body>
+ 
+
+  <div class="container">
+    
+    <div class="text-center">
+      
+      
+    </div>
+    
+  </div><!-- /.container -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <br></br>
+  <br></br>
+  <div class="row">
+    
+    <div class="col-md-8 col-md-offset-4">
+      
+      <form name="form1" method="post" action="/laravel/public/updateStatus">
+
+        ปรับปรุงสถานะการจอง <br>
+
+        <table width="400" border="1" style="width: 400px">
+
+          <tbody>
+
+
+
+            <tr>
+
+              <td> &nbsp;รหัสการจอง</td>
+
+              <td><input name="id" type="int" id="id" name="text_plain" required="" autofocus="" onKeyUp="if(isNaN(this.value)){ alert('กรุณากรอกตัวเลข'); this.value='';}"/>
+
+              </td>
+
+            </tr>
+
+
+
+          </tbody>
+
+  
+        </table>
+
+        <br>
+
+      </div>
+      <div class="row">
+       <div class="col-md-8 col-md-offset-5">
+        <a href="#"><button type="submit" class="btn btn-default">ปรับปรุง</button></a>
+      
+ </div>
+</div>
+
+    </form><br>
+
+    <center> <?php           // if(Auth::User())
+       $reserves = Reserve::all();
+
+       foreach($reserves as $reserve){
+
+   
+          echo"$reserve->id $reserve->status  $reserve->username  $reserve->source  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  $reserve->destination $reserve->timego  $reserve->timeto $reserve->seat  &nbsp; &nbsp; &nbsp; &nbsp;";
+           echo $reserve->money*$reserve->seat; echo "<br>\n";
+          
+       }
+
+  ?></center>
+    
+ 
+
+</body>
+</html>
+
+  
+
+
+@stop
