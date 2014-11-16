@@ -1,4 +1,5 @@
 <?php
+
 /*
 |--------------------------------------------------------------------------
 | Application & Route Filters
@@ -9,16 +10,17 @@
 | application. Here you may also register your custom route filters.
 |
 */
-App::before(function($request)
-{
-	if(!Request::secure() && array_get($_SERVER, 'SERVER_PORT') != 443){
-        return Redirect::secure(Request::path());
-    }
-});
-App::after(function($request, $response)
-{
-	//
-});
+
+		/*	App::before(function($request)
+			{
+				if(!Request::secure() && array_get($_SERVER, 'SERVER_PORT') != 443){
+			        return Redirect::secure(Request::path());
+			    }
+			});
+			App::after(function($request, $response)
+			{
+				//
+				}); */
 /*
 |--------------------------------------------------------------------------
 | Authentication Filters
@@ -45,10 +47,10 @@ Route::filter('auth', function()
 	}
 });
 */
-Route::filter('auth.basic', function()
-{
-	return Auth::basic();
-});
+	/*	Route::filter('auth.basic', function()
+		{
+			return Auth::basic();
+		});*/
 /*
 |--------------------------------------------------------------------------
 | Guest Filter
@@ -59,10 +61,10 @@ Route::filter('auth.basic', function()
 | response will be issued if they are, which you may freely change.
 |
 */
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
-});
+	/*	Route::filter('guest', function()
+		{
+			if (Auth::check()) return Redirect::to('/');
+		});*/
 /*
 |--------------------------------------------------------------------------
 | CSRF Protection Filter
@@ -73,16 +75,18 @@ Route::filter('guest', function()
 | session does not match the one given in this request, we'll bail.
 |
 */
-Route::filter('csrf', function()
-{
-	if (Session::token() != Input::get('_token'))
-	{
-		throw new Illuminate\Session\TokenMismatchException;
-	}
-});
-Route::filter('checkAuth', function()
-{
-	if (Auth::guest())return Redirect::guest('/');
-		
-	}
-);
+		/*	Route::filter('csrf', function()
+			{
+				if (Session::token() != Input::get('_token'))
+				{
+					throw new Illuminate\Session\TokenMismatchException;
+				}
+			});
+			Route::filter('checkAuth', function()
+			{
+				if (Auth::guest())return Redirect::guest('/');
+					
+				}
+			); */
+
+?>
